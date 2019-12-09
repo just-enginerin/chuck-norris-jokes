@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #677CA7;
+  color: white;
+}
+
+#grid {
+  display: grid;
+  grid-template: auto / 52% 48%;
+  grid-template-areas:
+  "jokes chuck";
+  width: 100vw;
+}
+
+#jokes {
+  grid-area: jokes;
+}
+
+#chuck {
+  grid-area: chuck;
+  height: 100vh;
+  position: relative;
+  right: 0;
+}
+
+#title {
+  text-align: center;
+  margin: 20% auto 10%;
+  font-size: 3em;
+}
+
+#joke {
+  width: 70%;
+  margin: 0 auto 10%;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+#refresh {
+  grid-area: refresh;
+  width: 200px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: 5px solid #AFB1C9;
+  background-color: #1F335E;
+  color: white;
+}

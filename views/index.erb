@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Chuck Norris Jokes</title>
+  <link href="main.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Chuck Norris Jokes</h1>
-  <p><%= @joke %></p>
-  <button type="button" onclick="window.location.reload()">Tell a new joke</button>
-  <script src="main.js"></script>
+  <div id="grid">
+    <div id="jokes">
+      <h1 id="title">Chuck Norris Jokes</h1>
+      <p id="joke"><%= @joke %></p>
+      <button type="button" onclick="window.location.reload()" id="refresh">Tell a new joke</button>
+    </div>
+    <img src="chuck.png" id="chuck">
+  </div>
+    <script src="main.js"></script>
 </body>
 </html>
